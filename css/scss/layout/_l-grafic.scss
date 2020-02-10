@@ -4,9 +4,8 @@
     @include c-flex(column);
     color:rgb(93, 93,93);   
     text-align: left; 
-    padding: 0 0.5rem;
-    //align-items: flex-end;
-    background-color: #eeeeee;
+    padding: 0 0.5rem;  
+    background-color:$background-color-grafic-data;
 }
 .grafic{
     width: 100%;

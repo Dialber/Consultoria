@@ -1,8 +1,0 @@
-/*
-mixin creado para el comportamiento de iconfonts y botones
-si es un boton trabajo con el color de fondo si es una fuente trabajo con el color del texto
-*/
-.circle1 {
-  background-color: red;
-  width: 30vw;
-  border-radius: 100%; }

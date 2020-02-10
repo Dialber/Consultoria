@@ -59,7 +59,7 @@ body {
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   line-height: 1.5;
-  font-family: "JosefinSans-Thin",sans-serif; }
+  font-family: 'JoseFin Sans', sans-serif; }
 
 @media (min-width: 36rem) {
   body {
@@ -637,8 +637,7 @@ mixin creado para el comportamiento de iconfonts y botones
 si es un boton trabajo con el color de fondo si es una fuente trabajo con el color del texto
 */
 .graficData {
-  padding: .5rem;
-  background-color: #f8f8f8; }
+  padding: .5rem; }
   .graficData > * {
     margin-bottom: 0.5rem; }
 
