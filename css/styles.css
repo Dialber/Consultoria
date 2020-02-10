@@ -54,12 +54,16 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+@font-face {
+  font-family: 'JoseFin Sans';
+  src: url(/css/font/Josefin_Sans/JosefinSans-Regular.ttf); }
+
 body {
   font-size: 85%;
   letter-spacing: 0.05rem;
   word-spacing: 0.1rem;
   line-height: 1.5;
-  font-family: 'JoseFin Sans', sans-serif; }
+  font-family: 'JoseFin Sans'; }
 
 @media (min-width: 36rem) {
   body {
