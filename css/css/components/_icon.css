@@ -1,0 +1,23 @@
+/*
+mixin creado para el comportamiento de iconfonts y botones
+si es un boton trabajo con el color de fondo si es una fuente trabajo con el color del texto
+*/
+.icon {
+  font-size: 1.5rem;
+  cursor: pointer; }
+  .icon:active {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
+  .icon:hover {
+    color: #0b000f; }
+  .icon:active {
+    color: black; }
+
+@media (min-width: 48rem) {
+  .icon {
+    font-size: 2rem; } }
+
+@media (min-width: 75rem) {
+  .icon {
+    font-size: 2.5rem; } }

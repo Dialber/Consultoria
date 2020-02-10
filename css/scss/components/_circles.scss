@@ -1,0 +1,14 @@
+.circles__h2{
+    position: relative;
+    color:#000;
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 2%;
+        height: 0.06rem;
+        bottom: -.5rem;
+        left: 48.5%;
+        background-color:#5d5d5d;
+    }
+}

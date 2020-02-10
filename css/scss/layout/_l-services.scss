@@ -1,0 +1,37 @@
+.l-services{    
+    padding: 3rem 1rem;
+    position: relative;    
+    background: url("../images/trianguleCentral.svg") center -2rem / 14rem no-repeat,url("../images/background/services/small.jpg") 0 0 / cover no-repeat;   
+}
+@media (min-width:36rem){
+    .l-services{
+        padding: 5rem 2rem;        
+        background: url("../images/trianguleCentral.svg") center -2rem / 16rem auto no-repeat,url("../images/background/services/medium.jpg") 0 0 / cover no-repeat;   
+    }
+}
+@media (min-width:48rem){
+    .l-services{
+        padding: 6rem 3rem; 
+        background-size: 21rem auto; 
+        background: url("../images/trianguleCentral.svg") center -2rem / 21rem auto no-repeat,url("../images/background/services/large.jpg") 0 0 / cover no-repeat;           
+    }
+}
+@media (min-width:62rem){
+    .l-services{
+        padding: 7rem 4rem; 
+        background-size: 24rem auto;
+        background: url("../images/trianguleCentral.svg") center -2rem / 24rem auto no-repeat,url("../images/background/services/extra.jpg") 0 0 / cover no-repeat;           
+    }
+}
+@media (min-width:75rem){
+    .l-services{
+        padding: 8rem 5rem;
+        background-size: 28rem auto,cover;         
+    }
+}
+@media (min-width:100rem){
+    .l-services{
+        padding: 9rem 6rem;
+        background-size: 31rem auto,cover;   
+    }
+}

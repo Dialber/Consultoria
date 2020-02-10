@@ -1,0 +1,134 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.services__ul{
+    background-color: #7a225d; 
+    display: flex;  
+    flex-direction: column;
+    color:#eaafd6;
+    position: relative;
+    z-index:20;
+}
+.services__ul1{
+    background-color: #480048;
+    li{
+        &::before{
+          background-color: #500c50;
+        }
+    }
+}
+.services__ul2{
+    background-color: #300030;
+    li{
+        &::before{
+          background-color: #3a0c3a;
+        }
+    }
+}
+.services__li{
+    display: flex;   
+    &::before{        
+        content:"\f061";
+        font-family:"Font Awesome 5 Free";
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;      
+        background-color:#802c64;
+    }    
+}
+.services__container{
+    flex: 3;
+    padding: .7rem;
+}
+.services__p1{
+    margin-bottom:1rem ;
+    color:#c6c6c6;
+    position: relative;
+    z-index: 20;
+}
+.services__h2{
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 20;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 3%;
+        height: .06rem;
+        left: 51%;
+        bottom: -.8rem;
+        background-color:#c6c6c6;
+    }
+}
+.services__span{
+    color:$color-span;
+}
+@media (min-width:36rem){
+    .services__container{       
+        padding: .8rem;
+    } 
+    .services__p1{
+        margin-bottom: 1rem;
+    }
+    .services__h2{
+        margin-bottom: .5rem;
+    }
+}
+@media (min-width:48rem){
+   .services__ul{
+       flex-direction: row;
+   }
+   .services__li{
+       width: 33.33%;
+   }
+   .services__container{       
+    padding: .9rem;    
+    } 
+    .services__p1{       
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }    
+    .services__h2{
+        margin-bottom: .8rem;
+    }
+}
+@media (min-width:62rem){
+    .services__container{       
+        padding: 1rem;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+    .services__p1{
+        margin-bottom: 3rem;
+    }
+    .services__h2{
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width:75rem){
+    .services__container{       
+        padding: 2rem;
+    } 
+    .services__p1{
+        margin-bottom: 4rem;
+    }
+    .services__h2{
+        margin-bottom: 1.5rem;
+    }
+}
+@media (min-width:100rem){
+    .services__container{       
+        padding: 3rem;
+    }
+    .services__p1{
+        margin-bottom: 5rem;
+    }
+    .services__h2{
+        margin-bottom: 2rem;
+    }
+}

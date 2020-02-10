@@ -1,0 +1,32 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.l-footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+   padding: 1rem;
+}
+.footer__derechosReservados{
+    color: #000;
+}
+@media (min-width:36rem){
+    .l-footer{
+        padding: 1.5rem 0;
+    } 
+}
+@media (min-width:48rem){
+    .l-footer{
+        padding: 2rem 0;
+    } 
+}
+@media (min-width:62rem){
+    .l-footer{
+        padding: 2.5rem 0;
+    } 
+}
+@media (min-width:75rem){
+   .l-footer{
+       padding: 3rem 0;
+   } 
+}

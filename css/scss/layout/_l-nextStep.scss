@@ -1,0 +1,110 @@
+@import "../utilities/mixins";
+.l-nextStep{
+    color: #000;
+    padding:10%;
+    padding-bottom: 0;
+    background:url("../images/trianguleRed.svg") center -2rem / cover no-repeat, url("../images/logoGrey.svg") 0 0 / 4rem 3rem border-box,#ededed;    
+    position: relative;  
+    &::before{
+        content:"Logo";
+        background: url("../images/logo1.svg") center 20%  /50% no-repeat,#fff;
+        border: .15rem solid #fff;
+        position: absolute;
+        top:-8%;
+        left: 42.5%;
+        width: 15vw;
+        height: 15vw;
+        border-radius: 50%;
+        z-index: 100;
+        box-shadow: 0 0 0 .1rem #000, 0 0 0 .13rem #000 inset;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        line-height: 2;       
+    }   
+     
+    >*{
+        position: relative;
+        z-index: 10;
+    }
+}
+.nextStep__h2{
+    margin-bottom: .5rem;
+    position: relative;
+    &::after{ 
+        content: "";
+        width: 4%;
+        height: .09rem;
+        background-color:#494949;
+        position: absolute;
+        left: 48%;
+        bottom: -.5rem;
+    }
+}
+.nextStep__span{
+    color:#f2f2f2;
+}
+.nextStep__p{
+    margin-bottom: .5rem;
+}
+@media (min-width:36rem){    
+    .l-nextStep{        
+        &::before{
+            width: 10vw;
+            height: 10vw;
+            left: 45%;
+        }
+    }
+    .nextStep__h2{
+        margin-bottom: 1.5rem;
+    }
+    .nextStep__p{
+        margin-bottom: 1.5rem;
+    }
+}
+@media (min-width:48rem){
+    .nextStep__h2{
+        margin-bottom: 2rem;
+    }
+    .nextStep__p{
+        margin-bottom: 2rem;
+    }
+}
+@media (min-width:62rem){
+    .nextStep__h2{
+        margin-bottom: 2.5rem;
+    }
+    .nextStep__p{
+        margin-bottom: 2.5rem;
+    }
+    .l-nextStep{
+        &::before{
+            line-height: 3;
+        }
+    }
+    
+}
+@media (min-width:75rem){
+    .nextStep__h2{
+        margin-bottom: 3rem;
+    }
+    .nextStep__p{
+        margin-bottom: 3rem;
+    }
+    .l-nextStep{
+        background-position: center -6rem, 0 0 ;
+    }
+   
+}
+@media (min-width:100rem){
+    .nextStep__h2{
+        margin-bottom: 3.5rem;
+    }
+    .nextStep__p{
+        margin-bottom: 3.5rem;
+    }
+    &::before{
+        line-height: 4;
+    }
+}

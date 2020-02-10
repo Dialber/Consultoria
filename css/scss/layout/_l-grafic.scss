@@ -1,0 +1,32 @@
+@import "../utilities/mixins";
+.l-grafic{
+    width: 100%;
+    @include c-flex(column);
+    color:rgb(93, 93,93);   
+    text-align: left; 
+    padding: 0 0.5rem;
+    //align-items: flex-end;
+    background-color: #eeeeee;
+}
+.grafic{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width:36rem){
+    
+}
+@media (min-width:48rem){
+  .l-grafic{
+      flex-direction: row;
+  } 
+  .grafic{
+      width: 50%;
+  }
+}
+@media (min-width:62rem){
+   
+}
+@media (min-width:75rem){
+    
+}

@@ -1,0 +1,125 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.figureCircles{
+    width: 100%;
+    @include c-flex(column);
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+}
+.figureCircles__circle1{
+    @include circle($color-circle1,6rem);
+    @include c-flex(column);
+    z-index: 4;
+}
+.figureCircles__circle2{
+    @include circle($color-circle2,9rem);
+    @include c-flex(column);   
+    position: relative;
+    top:-1rem;
+    z-index: 3;
+    box-sizing: border-box;
+}
+.figureCircles__circle3{
+    @include circle($color-circle3,11rem);
+    @include c-flex(column);
+    position: relative;
+    top:-2rem;
+    z-index: 2;
+}
+.figureCircles__circle4{
+    @include circle($color-circle4,6rem);
+    @include c-flex(column);
+    position: relative;
+    top:-3rem;
+    z-index: 1;
+}
+@media (min-width:36rem){
+    .figureCircles{
+        flex-direction: row;       
+        margin-bottom: 2rem;
+        font-size: .8rem;
+    }
+    .figureCircles__circle1{
+        @include circle($color-circle1,6rem);       
+    }
+    .figureCircles__circle2{       
+        top:0;
+        left:-.5rem;     
+        @include circle($color-circle2,9rem);  
+    }
+    .figureCircles__circle3{       
+        top:0;
+        left:-1rem;      
+        @include circle($color-circle3,11rem);  
+    }
+    .figureCircles__circle4{       
+        top:0;
+        left:-1.5rem;    
+        @include circle($color-circle4,6rem);        
+    }    
+}
+
+@media (min-width:48rem){
+    .figureCircles__circle1{
+        @include circle($color-circle1,7rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,9rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,11rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,7rem);      
+    } 
+}
+@media (min-width:62rem){
+    .figureCircles{
+        font-size: .9rem;
+    }
+    .figureCircles__circle1{
+        @include circle($color-circle1,8rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,11rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,14rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,8rem);      
+    } 
+}
+@media (min-width:75rem){
+    .figureCircles{
+        font-size: 1rem;        
+    }
+    .figureCircles__circle1{
+        @include circle($color-circle1,10rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,17rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,20rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,10rem);      
+    }
+}
+@media (min-width:120rem){
+    .figureCircles__circle1{
+        @include circle($color-circle1,13rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,22rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,25rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,13rem);      
+    }
+}

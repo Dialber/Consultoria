@@ -1,0 +1,118 @@
+@import "../utilities/mixins";
+.container{
+    position: relative;
+    z-index: 30;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.containerLogoMenu__ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.containerLogoMenu__li{   
+    &:first-of-type{
+        padding-right: .5rem;
+        border-right: .1rem solid white;
+    }
+    &:last-of-type{
+        padding-left: .5rem;
+        &::after{
+            margin-left: .5rem;
+            content:"\f0c9";
+            font-family:"Font Awesome 5 Free";
+            font-weight: 900;
+        }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+}
+.containerLogoMenu__div{
+  align-items: baseline;
+}
+.containerLogoMenu__img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
+.containerLogoMenu__p,.containerLogoMenu__a{
+   text-transform: uppercase;
+}
+@media (min-width:36rem){
+    .containerLogoMenu__img{
+        width: 1.8rem;
+        height: 1.8rem;        
+    }
+    .containerLogoMenu__li{        
+        &:first-of-type{
+            padding-right: 0.6rem;           
+        }
+        &:last-of-type{
+            padding-left: 0.6rem;
+            &::after{
+                margin-left: 0.6rem;               
+            }
+        } 
+    }   
+}
+@media (min-width:48rem){
+    .container{
+        font-size: 1.15rem;
+    }
+    .containerLogoMenu__img{
+        width: 2rem;
+        height: 2rem;        
+    }
+    .containerLogoMenu__li{        
+        &:first-of-type{
+            padding-right: 0.8rem;           
+        }
+        &:last-of-type{
+            padding-left: 0.8rem;
+            &::after{
+                margin-left: 0.8rem;               
+            }
+        } 
+    }    
+}
+@media (min-width:62rem){
+    
+    .containerLogoMenu__img{
+        width: 2.5rem;
+        height: 2.5rem;        
+    }
+    .containerLogoMenu__li{        
+        &:first-of-type{
+            padding-right: 1rem;           
+        }
+        &:last-of-type{
+            padding-left: 1rem;
+            &::after{
+                margin-left: 1rem;               
+            }
+        }       
+    }
+}
+@media (min-width:75rem){
+    .container{
+        font-size: 1.25rem;
+    }
+    .containerLogoMenu__img{
+        width: 3rem;
+        height: 3rem;        
+    }
+    .containerLogoMenu__li{        
+        &:first-of-type{
+            padding-right: 1.3rem;           
+        }
+        &:last-of-type{
+            padding-left: 1.3rem;
+            &::after{
+                margin-left: 1.3rem;               
+            }
+        }       
+    }
+}

@@ -1,0 +1,41 @@
+@import "../utilities/variables";
+.centralContainer{
+    position: relative;
+    z-index: 30;
+    margin-top: 4rem;
+}
+.centralContainer__h1{
+    color: #fff;
+}
+.centralContainer__h2{
+    color:$color-h1;
+}
+.centralContainer__p{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    position: relative;   
+}
+@media (min-width:36rem){
+    .centralContainer{
+       margin-top: 5rem;
+     }   
+}
+@media (min-width:48rem){
+    .centralContainer{
+        margin-top: 7rem;
+     }
+    
+}
+@media (min-width:62rem){
+    .centralContainer{
+        margin-top: 11rem;    
+    }
+    
+}
+@media (min-width:75rem){
+    .centralContainer{
+       margin-top: 13rem;
+    }  
+}

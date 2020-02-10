@@ -1,0 +1,42 @@
+
+body{
+    font-size: 85%;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.1rem; 
+    line-height: 1.5;
+    font-family:"JosefinSans-Thin",sans-serif;
+}
+@media (min-width:36rem){
+    body{
+        font-size: 90%;
+    }
+    
+}
+@media (min-width:48rem){
+    body{
+        font-size: 100%;
+    }
+    
+}
+@media (min-width:75rem){
+    body{
+        font-size: 110%;
+    }
+    
+}
+
+/*
+
+@media (min-width:36rem){
+    
+}
+@media (min-width:48rem){
+   
+}
+@media (min-width:62rem){
+   
+}
+@media (min-width:75rem){
+    
+}
+*/

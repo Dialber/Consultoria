@@ -1,0 +1,59 @@
+/*
+Contenedor de los (párrafos y los h3) del article correspondiente a los circulos de colores
+*/
+@import "../utilities/mixins";
+.containerParraf{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    color:rgb(93, 93, 93);
+    
+}
+.articleParraf{
+    padding: .5rem;
+    text-align: left;
+    margin-bottom: 1rem;   
+}
+.articleParraf__h3{
+    color:#000;
+    &:first-of-type{
+        padding-top: 0;
+    }
+}
+@media (min-width:36rem){
+    .containerParraf{
+        align-items: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .articleParraf{
+        width: 50%;   
+    }
+}
+@media (min-width:48rem){
+   
+}
+@media (min-width:62rem){
+    .containerParraf{
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;             
+    }   
+}
+@media (min-width:75rem){
+    .containerParraf{
+        width: 80%;
+    }   
+}
+@media (min-width:100rem){
+    .containerParraf{
+        width: 75%;
+    }
+    .articleParraf{
+        width: 25%;
+        margin: 0;    
+        align-self: flex-start;  
+    }
+}

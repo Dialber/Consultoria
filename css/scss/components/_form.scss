@@ -1,0 +1,47 @@
+@import "../utilities/mixins";
+@import "../utilities/variables";
+.formul{
+    @include c-flex(column);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5% 20%;   
+    background-color:#ffffff;    
+    box-shadow: 0 .06rem #dfdfdf;
+}
+@media (min-width:36rem){
+    @media (min-width:75rem){
+        .formul{
+           width: 85%;
+           padding: 1rem 6rem;   
+        }
+    }
+}
+@media (min-width:48rem){
+    @media (min-width:75rem){
+        .formul{
+           width: 80%;
+           padding: 2rem 8rem;   
+        }
+    }
+}
+@media (min-width:62rem){
+    @media (min-width:75rem){
+        .formul{
+            width: 70%;
+            padding: 3rem 10rem;   
+        }
+    }
+}
+@media (min-width:75rem){
+    .formul{
+        width: 60%;
+        padding: 3.5rem 12rem;   
+    }
+}
+@media (min-width:100rem){
+    .formul{
+        width: 50%;
+        padding: 4rem 14rem;       
+    }
+}

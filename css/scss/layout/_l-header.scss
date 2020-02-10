@@ -1,0 +1,105 @@
+@import "../utilities/mixins";
+.l-header{    
+    position: relative;    
+    width: 100%;
+    height: 18rem;
+    background: url("../images/background/small-background.jpg") 0 0 /cover no-repeat;    
+    padding:.5rem .5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    &::before,&::after{
+        position: absolute;       
+        display: inline-block;          
+    }  
+    &::before{
+        content: "";
+        top: 0;
+        left: 0;      
+        width: 100%;
+        height: 100%;       
+        background: linear-gradient(rgba(50, 0, 66, 0.6), rgba(50, 0, 66, 0.6)),url("../images/trianguleCentral.svg") center center /40% no-repeat,
+                                    url("../images/trianguleTop.svg") left top /20% no-repeat,
+                                    url("../images/trianguleBotom.svg") right 120% /20% no-repeat;
+        z-index: 20;
+    }   
+    
+}
+.pScroll{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .2rem;
+    position: relative;
+    z-index: 30;
+    width: 3rem;
+    &:hover{
+        cursor: pointer;
+    }
+    &::before{
+        content: "";
+        display: inline-block;
+        width: 0.9rem;
+        height: 1.8rem;
+        border: .05rem solid #fff;
+        border-radius: .4rem;
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        position: absolute;
+        height: .4rem;
+        border: 0.02rem solid white;
+        top:.5rem;
+        left:48%;
+    }
+}
+@media (min-width:36rem){
+    .l-header{
+        height: 26rem;
+        background: url("../images/background/medium-background.jpg") 0 0 /cover no-repeat;  
+        padding:1rem 2rem 1.5rem;
+        padding-left: 1rem;
+       
+    }
+}
+@media (min-width:48rem){
+    .l-header{
+        height: 32rem;       
+        padding:2rem 4rem 3rem;
+        padding-left: 2rem;
+        
+    }
+}
+@media (min-width:62rem){
+    .l-header{
+        height: 47rem;
+        background: url("../images/background/large-background.jpg") 0 0 /cover no-repeat;  
+        padding:3rem 6rem 4.25rem;
+        padding-left: 3rem;
+       
+    }  
+}
+@media (min-width:75rem){
+    .l-header{
+        height: 62rem;
+        background: url("../images/background/extra-background.jpg") 0 0 /cover no-repeat;  
+        padding:4rem 8rem 6.25rem;
+        padding-left: 4rem;
+        
+    }
+    .pScroll{
+        &::before{           
+            width: 2rem;
+            height: 3.5rem;           
+            border-radius: 1rem;
+        }
+        &::after{
+           height: 0.9rem;
+        }
+    }
+}
+@media (min-width:100rem){
+   
+}

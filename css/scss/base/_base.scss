@@ -1,0 +1,54 @@
+body{
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;   
+}
+h1,h2,h3{
+    text-transform: uppercase;
+    line-height:1;    
+    font-weight: 500;
+    font-size: 1.4rem; 
+    margin-bottom: .5rem;
+}
+h3{
+    font-size: 1.1rem;  
+}
+p{
+    font-weight: 200;
+}
+
+@media (min-width:36rem){
+    h1,h2{
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width:48rem){
+    h1,h2{         
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }  
+    
+}
+@media (min-width:62rem){
+    h1,h2{ 
+        font-weight: 500;
+        font-size: 2.2rem; 
+        margin-bottom: 1.3rem;
+    }
+}
+@media (min-width:75rem){
+    h1,h2{ 
+        font-weight: 600;
+        font-size: 3.4rem;  
+        margin-bottom: 1.4rem;  
+    }
+}
+@media (min-width:100rem){
+    h1,h2{ 
+        font-weight: 600;
+        font-size: 4.4rem; 
+        margin-bottom: 1.5rem;   
+    }
+}

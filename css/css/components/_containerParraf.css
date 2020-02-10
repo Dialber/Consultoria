@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*
+Contenedor de los (párrafos y los h3) del article correspondiente a los circulos de colores
+*/
+/*
+mixin creado para el comportamiento de iconfonts y botones
+si es un boton trabajo con el color de fondo si es una fuente trabajo con el color del texto
+*/
+.containerParraf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
