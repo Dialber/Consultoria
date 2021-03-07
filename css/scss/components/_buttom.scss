@@ -1,34 +1,26 @@
 @import "../utilities/variables";
 .buttom{
     display: inline-block;   
-    background-color:$color-primary;
-    color:$color-buttom;
+    background-color:$color-black;
     font-size: 1.2rem;
     padding: .3rem .7rem;
     font-weight: 400;
     border: 0;
-    $esButtom:true;
-    @include conduct($color-primary,$esButtom);
+    @include conduct($color-primary,true);
+    &::before{
+        color:$color-white;
+        font-size: 2.5rem;
+    }
 }
-@media (min-width:36rem){
-    .buttom{
-        padding: .4rem 1.2rem;
-       } 
+@media #{$landscape-phones}{
+    
 }
-@media (min-width:48rem){
-    .buttom{
-        padding: .6rem 1.8rem;
-        font-size: 1.4rem;
-       } 
+@media #{$tablets}{
+  
 }
-@media (min-width:62rem){
-    .buttom{
-        padding: .8rem 2.5rem;
-       } 
+@media #{$desktops}{
+  
 }
-@media (min-width:75rem){
-    .buttom{
-        padding: 1rem 3rem;
-        font-size: 1.8rem;
-       } 
+@media #{$large-desktops}{
+    
 }

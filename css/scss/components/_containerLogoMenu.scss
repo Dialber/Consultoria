@@ -1,4 +1,5 @@
 @import "../utilities/mixins";
+@import "../utilities/variables";
 .container{
     position: relative;
     z-index: 30;
@@ -11,23 +12,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.containerLogoMenu__li{   
-    &:first-of-type{
-        padding-right: .5rem;
-        border-right: .1rem solid white;
-    }
-    &:last-of-type{
-        padding-left: .5rem;
-        &::after{
-            margin-left: .5rem;
-            content:"\f0c9";
-            font-family:"Font Awesome 5 Free";
-            font-weight: 900;
-        }
-    }
-    &:hover{
-        cursor: pointer;
+    >*{
+        padding: .1rem .5rem;
     }
 }
 .containerLogoMenu__div{
@@ -41,78 +27,59 @@
 .containerLogoMenu__p,.containerLogoMenu__a{
    text-transform: uppercase;
 }
-@media (min-width:36rem){
+.containerLogoMenu__p{
+    font-size: 1rem;
+}
+.containerLogoMenu__a{
+    color:$color-white;
+    font-weight: 600;
+    font-size: $font-size-menu;
+    margin-right: 1.5rem;
+    position: relative;
+    line-height: 1;
+    &::after{
+        content: "";
+        width: .2rem;
+        height: 100%;
+        background-color: $color-gray;
+        position: absolute;
+        bottom: 0;
+        right: -.8rem;
+    }
+}
+@media #{$landscape-phones}{
     .containerLogoMenu__img{
         width: 1.8rem;
         height: 1.8rem;        
     }
-    .containerLogoMenu__li{        
-        &:first-of-type{
-            padding-right: 0.6rem;           
-        }
-        &:last-of-type{
-            padding-left: 0.6rem;
-            &::after{
-                margin-left: 0.6rem;               
-            }
-        } 
-    }   
 }
-@media (min-width:48rem){
-    .container{
-        font-size: 1.15rem;
-    }
+@media #{$tablets}{
     .containerLogoMenu__img{
         width: 2rem;
         height: 2rem;        
     }
-    .containerLogoMenu__li{        
-        &:first-of-type{
-            padding-right: 0.8rem;           
-        }
-        &:last-of-type{
-            padding-left: 0.8rem;
-            &::after{
-                margin-left: 0.8rem;               
-            }
-        } 
-    }    
 }
-@media (min-width:62rem){
-    
+@media #{$desktops}{    
     .containerLogoMenu__img{
         width: 2.5rem;
         height: 2.5rem;        
     }
-    .containerLogoMenu__li{        
-        &:first-of-type{
-            padding-right: 1rem;           
-        }
-        &:last-of-type{
-            padding-left: 1rem;
-            &::after{
-                margin-left: 1rem;               
-            }
-        }       
-    }
 }
-@media (min-width:75rem){
-    .container{
-        font-size: 1.25rem;
-    }
+@media #{$large-desktops}{
     .containerLogoMenu__img{
         width: 3rem;
         height: 3rem;        
     }
-    .containerLogoMenu__li{        
-        &:first-of-type{
-            padding-right: 1.3rem;           
-        }
-        &:last-of-type{
-            padding-left: 1.3rem;
-            &::after{
-                margin-left: 1.3rem;               
-            }
-        }       
+}
+@media #{$extra-large-desktops}{
+    .containerLogoMenu__img{
+        width: 4rem;
+        height: 4rem;        
+    }
+}
+@media #{$four-k}{
+    .containerLogoMenu__img{
+        width: 5rem;
+        height: 5rem;        
     }
 }

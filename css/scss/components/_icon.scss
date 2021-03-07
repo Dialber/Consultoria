@@ -2,23 +2,19 @@
 @import "../utilities/mixins";
 .icon{    
     $esButton:false;
-    font-size: 1.5rem;    
+    font-size: 2rem;    
     @include conduct($color-primary,$esButton);
 }
 
-@media (min-width:36rem){
+@media #{$landscape-phones}{
     
 }
-@media (min-width:48rem){
-    .icon{
-        font-size: 2rem;
-    }
+@media #{$tablets}{
+  
 }
-@media (min-width:62rem){
+@media #{$desktops}{
    
 }
-@media (min-width:75rem){
-    .icon{
-        font-size: 2.5rem;
-    }
+@media #{$large-desktops}{
+  
 } 

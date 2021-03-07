@@ -1,54 +1,96 @@
+@import "../utilities/variables";
 body{
-    color: #fff;
+    width: 100%;
+	text-align: center;
+	margin: 0 auto;
+    color: $color-white;
+    background-color: $background-color-body;
+    font-size: $font-size-base-phones;
+    letter-spacing: $letter-spacing;
+    word-spacing: $word-spacing; 
+    line-height: $line-height;
+    font-family: "Roboto";
+    font-weight: 600;
+    overflow-x: hidden;
 }
-html{
-    scroll-behavior: smooth;   
+input{
+   font-weight: 400;
 }
-h1,h2,h3{
+textarea{
+    font-size: inherit;
+}
+::placeholder{
+    font-family: "Roboto";
+    font-size: inherit;
+    font-weight: 200;
+    margin-left: 2rem;
+}
+h1,h2,h3{    
+    line-height:$line-height-h1;
+    font-family: "Roboto";
+    font-weight: 900;
+}
+h1,h2{
+    font-size: $font-size-h1;
     text-transform: uppercase;
-    line-height:1;    
-    font-weight: 500;
-    font-size: 1.4rem; 
-    margin-bottom: .5rem;
 }
 h3{
-    font-size: 1.1rem;  
+    font-size: $font-size-h3;    
+}
+img,video{
+    max-width: 100%;
+    height: auto;
 }
 p{
-    font-weight: 200;
+    font-weight: 100;
+    font-size: $font-size-p;
+}
+a{
+    text-decoration: none;
+    font-size: $font-size-a;
+}
+span{
+    font-weight: bolder;
+    font-size: $font-size-span;
+}
+html, body{
+    scroll-behavior: smooth;
+    font-size: $font-size-base-phones;
+}
+:focus{
+    box-shadow: 0 0 0 .2rem $color-red;
+}
+@media #{$landscape-phones}{
+    html, body{
+        font-size: $font-size-base-landscape-phones;
+    }  
+}
+@media #{$tablets}{
+    html, body{
+        font-size: $font-size-base-tablets;
+    }  
+    h1,h2{
+        font-size: 2.5rem;
+    }
+}
+@media #{$desktops}{
+    html, body{
+        font-size: $font-size-base-desktops;
+    }
+}
+@media #{$large-desktops}{    
+    html, body{
+        font-size: $font-size-base-large-desktops;
+    }
+}
+@media #{$extra-large-desktops}{    
+    html, body{
+        font-size: $font-size-base-extra-large-desktops;
+    }
 }
 
-@media (min-width:36rem){
-    h1,h2{
-        font-size: 1.6rem;
-        margin-bottom: 1rem;
-    }
-}
-@media (min-width:48rem){
-    h1,h2{         
-        font-size: 1.8rem;
-        margin-bottom: 1.2rem;
-    }  
-    
-}
-@media (min-width:62rem){
-    h1,h2{ 
-        font-weight: 500;
-        font-size: 2.2rem; 
-        margin-bottom: 1.3rem;
-    }
-}
-@media (min-width:75rem){
-    h1,h2{ 
-        font-weight: 600;
-        font-size: 3.4rem;  
-        margin-bottom: 1.4rem;  
-    }
-}
-@media (min-width:100rem){
-    h1,h2{ 
-        font-weight: 600;
-        font-size: 4.4rem; 
-        margin-bottom: 1.5rem;   
+@media #{$four-k}{   
+    html, body{
+        font-size: $font-size-base-four-k;
     }
 }

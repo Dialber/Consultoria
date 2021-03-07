@@ -6,23 +6,6 @@
         margin-bottom: 0.5rem;
     }    
 }
-.graficData__h2{   
-    position: relative;
-    color:#000;
-    &::after{
-        content: "";
-        display: inline-block;
-        width: 6%;
-        height: 0.06rem;
-        left: 47%;
-        bottom: -.5rem;
-        position: absolute;
-        background-color: black;
-    }
-}
-.graficData__span{
-    color:$color-span;
-}
 .graficData__hr{
  font-weight: 100;
  margin-bottom: 1rem;
@@ -43,33 +26,19 @@
    width: 30%;
    padding: .5rem;
 }
-@media (min-width:36rem){
-    .graficData{
-        padding: 2rem 1rem;
-    }
+@media #{$landscape-phones}{
+   
 }
-@media (min-width:48rem){
+@media #{$tablets}{
     .graficData{
-        padding: 3.5rem 2rem;
         width: 50%;
     }
 }
-@media (min-width:62rem){
-    .graficData{
-        padding: 4.5rem 3rem;
-
-    }
+@media #{$desktops}{
+    
 }
-@media (min-width:75rem){
-    .graficData{
-        padding: 5.5rem 3rem;
-    }
+@media #{$large-desktops}{
    
 }
-@media (min-width:100rem){
-    .graficData{
-        padding: 6.5rem 4rem;
-
-    }
-    
+@media #{$extra-large-desktops}{
 }

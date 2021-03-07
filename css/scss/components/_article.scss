@@ -1,0 +1,119 @@
+@import "../utilities/_variables";
+
+.article{
+    >*:not(ul){
+        margin-bottom: 2rem;
+    }
+}
+.article__span{
+    font-size: inherit;
+}
+
+.article__span--services{
+    color:$color-span;
+}
+
+.article__span--nextStep{
+    color:#f2f2f2;
+}
+.article__span--graficData{
+    color:$color-span;
+}
+.article__p{
+    margin:0 auto 2rem;
+    width: 90%;
+    font-size: 1.1rem;
+}
+
+.article__p--services{
+    margin-bottom:1rem ;
+    color:#c6c6c6;
+    position: relative;
+    z-index: 20;
+}
+
+.article__p--nextStep{
+    margin-bottom: .5rem;
+}
+.article__h2{
+    position: relative;
+    color:#000;
+    &::after{
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 10%;
+        height: 0.15rem;
+        bottom: -.8rem;
+        left: 47.5%;
+        background-color:#5d5d5d;
+    }
+}
+
+.article__h2--grafic{
+    &::after{
+        left: 47%;
+        background-color: black;
+    }
+}
+
+.article__h2--services{
+    &::after{
+        left: 47.5%;
+        background-color:#c6c6c6;
+    }
+}
+
+.article__h2--nextStep{
+    &::after{ 
+        background-color:#494949;
+        left: 47.5%;
+        bottom: -.5rem;
+    }
+}
+
+@media #{$landscape-phones}{
+    .article{        
+        >*:not(ul){
+            margin-bottom: 1rem;
+        }
+    }
+    .article__p{
+        font-size: 1.2rem;
+     }
+      
+    .article__p--services{
+        margin-bottom: 1rem;
+    }    
+    .article__p--nextStep{
+        margin-bottom: 1.5rem;
+    }
+}
+@media #{$tablets}{   
+    .article__p--services{       
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    } 
+     .article{         
+        >*:not(ul){
+            margin-bottom: 1.5rem;
+        }
+     }
+}
+@media #{$desktops}{
+    .article__p{
+       width: 75%;
+    }
+   
+}
+@media #{$large-desktops}{
+   
+}
+@media #{$extra-large-desktops}{
+   
+}
+@media #{$four-k}{
+   
+}

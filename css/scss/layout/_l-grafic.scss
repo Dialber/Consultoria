@@ -1,4 +1,5 @@
 @import "../utilities/mixins";
+@import "../utilities/_variables";
 .l-grafic{
     width: 100%;
     @include c-flex(column);
@@ -12,10 +13,10 @@
     margin-left: auto;
     margin-right: auto;
 }
-@media (min-width:36rem){
+@media #{$landscape-phones}{
     
 }
-@media (min-width:48rem){
+@media #{$tablets}{
   .l-grafic{
       flex-direction: row;
   } 
@@ -23,9 +24,9 @@
       width: 50%;
   }
 }
-@media (min-width:62rem){
+@media #{$desktops}{
    
 }
-@media (min-width:75rem){
+@media #{$large-desktops}{
     
 }

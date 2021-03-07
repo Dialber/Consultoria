@@ -35,7 +35,7 @@
     top:-3rem;
     z-index: 1;
 }
-@media (min-width:36rem){
+@media #{$landscape-phones}{
     .figureCircles{
         flex-direction: row;       
         margin-bottom: 2rem;
@@ -61,7 +61,7 @@
     }    
 }
 
-@media (min-width:48rem){
+@media #{$tablets}{
     .figureCircles__circle1{
         @include circle($color-circle1,7rem);       
     }
@@ -75,7 +75,7 @@
         @include circle($color-circle4,7rem);      
     } 
 }
-@media (min-width:62rem){
+@media #{$desktops}{
     .figureCircles{
         font-size: .9rem;
     }
@@ -92,7 +92,7 @@
         @include circle($color-circle4,8rem);      
     } 
 }
-@media (min-width:75rem){
+@media #{$large-desktops}{
     .figureCircles{
         font-size: 1rem;        
     }
@@ -109,7 +109,7 @@
         @include circle($color-circle4,10rem);      
     }
 }
-@media (min-width:120rem){
+@media #{$extra-large-desktops}{
     .figureCircles__circle1{
         @include circle($color-circle1,13rem);       
     }

@@ -2,46 +2,53 @@
 @import "../utilities/variables";
 .formul{
     @include c-flex(column);
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     padding: 5% 20%;   
-    background-color:#ffffff;    
     box-shadow: 0 .06rem #dfdfdf;
 }
-@media (min-width:36rem){
-    @media (min-width:75rem){
-        .formul{
-           width: 85%;
-           padding: 1rem 6rem;   
-        }
-    }
+.article__containerForm{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#ffffff;    
+    width: 90%;
 }
-@media (min-width:48rem){
-    @media (min-width:75rem){
-        .formul{
-           width: 80%;
-           padding: 2rem 8rem;   
-        }
-    }
+.formul__divContainer{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    position: relative;
 }
-@media (min-width:62rem){
-    @media (min-width:75rem){
-        .formul{
-            width: 70%;
-            padding: 3rem 10rem;   
-        }
-    }
+.forml__label{
+    position: absolute;
+    left: 0;
+    top: 0;
+    clip: rect(0 0 0 0 );
 }
-@media (min-width:75rem){
+@media #{$landscape-phones}{
     .formul{
+       padding: 1rem 6rem;   
+    }
+    .article__containerForm{
+        width: 85%;
+    }
+}
+@media #{$tablets}{
+    .article__containerForm{
+        width: 80%;
+    }
+}
+@media #{$desktops}{
+    .article__containerForm{
+        width: 70%;
+    }
+}
+@media #{$large-desktops}{
+    .article__containerForm{
         width: 60%;
-        padding: 3.5rem 12rem;   
     }
 }
-@media (min-width:100rem){
-    .formul{
+@media #{$extra-large-desktops}{   
+    .article__containerForm{
         width: 50%;
-        padding: 4rem 14rem;       
     }
 }

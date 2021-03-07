@@ -10,23 +10,15 @@
 .footer__derechosReservados{
     color: #000;
 }
-@media (min-width:36rem){
-    .l-footer{
-        padding: 1.5rem 0;
-    } 
+@media #{$landscape-phones}{
+    
 }
-@media (min-width:48rem){
-    .l-footer{
-        padding: 2rem 0;
-    } 
+@media #{$tablets}{
+  
 }
-@media (min-width:62rem){
-    .l-footer{
-        padding: 2.5rem 0;
-    } 
+@media #{$desktops}{
+    
 }
-@media (min-width:75rem){
-   .l-footer{
-       padding: 3rem 0;
-   } 
+@media #{$large-desktops}{
+  
 }

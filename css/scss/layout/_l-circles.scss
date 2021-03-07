@@ -1,56 +1,24 @@
-.l-circles{
+@import "../utilities/_variables";
+.article--circles{
     color:rgb(93, 93, 93);
     padding: .5rem;
-    width: 100%;
-    height: auto;
-    >*{
-        margin-bottom: 0.5rem;
-    }
+    height: auto;    
 }
-.circles__p1{
-    margin:0 auto 2rem;
-    width: 90%;
+@media #{$landscape-phones}{
+   
 }
-@media (min-width:36rem){
-    .l-circles{
-        padding: 5rem 2rem;
-        >*{
-            margin-bottom: 1rem;
-        }
-    }
+@media #{$tablets}{
+   
 }
-@media (min-width:48rem){
-    .l-circles{
-        padding: 6rem 2rem;
-        >*{
-            margin-bottom: 1.5rem;
-        }
-    }
+@media #{$desktops}{
+  
 }
-@media (min-width:62rem){
-    .l-circles{
-        padding: 7rem 3rem;
-        >*{
-            margin-bottom: 2rem;
-        }
-    }
-    .circles__p1{
-       width: 75%;
-    }
+@media #{$large-desktops}{
+   
 }
-@media (min-width:75rem){
-    .l-circles{
-        padding: 8rem 4rem;
-        >*{
-            margin-bottom: 3rem;
-        }
-    }
+@media #{$extra-large-desktops}{
+   
 }
-@media (min-width:100rem){
-    .l-circles{
-        padding: 9rem 5rem;
-        >*{
-            margin-bottom: 4rem;
-        }
-    }
+@media #{$four-k}{
+  
 }

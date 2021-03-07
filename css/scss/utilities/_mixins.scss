@@ -14,15 +14,22 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
             background-color: darken($color, 10%);           
         }
         &:active{
-            background-color: darken($color, 20%);       
+            background-color: darken($color, 20%);                  
         }     
     }
+    /*Si es una fuente*/
     @else{
         &:hover{
-            color: darken($color, 10%);           
+            color: darken($color, .5);           
         }
         &:active{
-            color: darken($color, 20%);       
+            color: darken($color, .7);       
+        }
+        &:link{
+            color:$color;
+        }
+        &:visited{
+            color:$color-secundary;
         }
     }   
 }

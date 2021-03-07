@@ -2,83 +2,39 @@
 @import "../utilities/variables";
 .inputext{
   width: 100%;
-  line-height: 1;
   border: 0; 
-  border-bottom: .06rem #ebebeb solid;
-  padding-top: 1rem;
+  border-bottom: .1rem #ebebeb solid;
+  padding-top: 1.5rem;
   padding-left: .5rem;
-  margin-bottom: .2rem;
-  &:focus{
-    box-shadow: 0 0 .1rem .1rem red;
-  }
+  font-size: inherit;
+  position: relative;
+  font-weight: 400;
+  :focus{
+    box-shadow: 0 0 0 .2rem $color-red;
 }
-
+}
 .submit{
     width: auto;
     padding: .6rem 3rem;
     $isButtom:true;
     @include conduct(#fff,$isButtom);
     border:.15rem solid #878787;
-    &:focus{
-      box-shadow:none;
-    } 
 }
 .textarea{
-    resize: none;
     margin-bottom: 1rem; 
-}
-@media (min-width:36rem){
-  .inputext{
-    margin-bottom: 1.3rem;
-  }
-  .textarea{     
-    margin-bottom: 1.5rem;        
-  }
-  .submit{      
-    padding: .7rem 3.5rem;
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    &::placeholder{
+      font-family: "Roboto";
+      font-size: inherit;
+      //font-weight: 400;
+      margin-left: 2rem;
   }
 }
-@media (min-width:48rem){
-  .inputext{
-    margin-bottom: 1.5rem;
-  }
-  .textarea{     
-    margin-bottom: 2rem;        
-  }
-  .submit{      
-    padding: .8rem 3.5rem;
-  }
+@media #{$landscape-phones}{
+ 
 }
-@media (min-width:62rem){
-  .inputext{
-    margin-bottom: 2rem;
-  }
-  .textarea{     
-    margin-bottom: 2.5rem;        
-  }
-  .submit{      
-    padding: .9rem 4rem;
-  }
-}
-@media (min-width:75rem){
-  .inputext{
-    margin-bottom: 2.5rem;
-  }
-  .submit{      
-    padding: 1rem 4.5rem;
-  }
-  .textarea{     
-    margin-bottom: 3rem;        
-  }
-}
-@media (min-width:100rem){
-    .inputext{
-      margin-bottom: 3rem;
-    }
-    .submit{      
-      padding: 1.2rem 5rem;
-    }
-    .textarea{     
-      margin-bottom: 4rem;        
-    }
+@media #{$tablets}{
+  
 }

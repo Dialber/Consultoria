@@ -1,0 +1,31 @@
+@import "../utilities/variables";
+/* .square-line{
+    position: relative;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        height: 2rem;
+        width: 2rem;
+        border-bottom: .2rem solid $color-white;
+        border-left: .2rem solid $color-white;
+        left: 5rem;
+        bottom:49%;        
+    }
+}
+.line{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-color: $color-white;
+        height: 100%;
+        width: .2rem;
+        left: 5rem;
+        bottom:0;        
+    }
+} */
+.show{
+    transition: transform 2s ease;
+    transform: translateX(0);
+}

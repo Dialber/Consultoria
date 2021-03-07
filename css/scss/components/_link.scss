@@ -1,0 +1,28 @@
+@import "../utilities/variables";
+.link{
+    cursor: pointer;
+    line-height: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    &:link{
+        color:$color-link;
+    }
+    &:hover{
+        color: $color-black;
+    }
+    &:active,&:focus{
+        color: darken($color-primary, 30%);
+         box-shadow: 0 0 0 .2rem $color-secundary inset;
+    }
+    &:visited{
+        color:$color-secundary;
+    }
+    &::before{
+        margin-right: 4rem;
+        width: 6rem;
+        font-size: 1.3rem;
+    }
+
+}

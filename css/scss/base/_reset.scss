@@ -11,32 +11,21 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video,input,textarea,button {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	outline: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
 	box-sizing: border-box;
+	background: transparent;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
-body {
-	width: 100%;
-	line-height: 1rem;
-	text-align: center;
-	margin: 0 auto;
-}
-a{
-    text-decoration: none;
-}
-img,video{
-    max-width: 100%;
-    height: auto;
 }
 ol, ul {
 	list-style: none;
@@ -48,6 +37,15 @@ blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
+}
+:focus{
+	outline: 0;
+}
+ins{
+	text-decoration: none;
+}
+del{
+	text-decoration: line-through;
 }
 table {
 	border-collapse: collapse;

@@ -2,6 +2,7 @@
 Contenedor de los (párrafos y los h3) del article correspondiente a los circulos de colores
 */
 @import "../utilities/mixins";
+@import "../utilities/_variables";
 .containerParraf{   
     display: flex;
     flex-direction: column;
@@ -18,11 +19,17 @@ Contenedor de los (párrafos y los h3) del article correspondiente a los circulo
 }
 .articleParraf__h3{
     color:#000;
+    font-size: .7rem; 
+    text-transform: uppercase;
+    margin-bottom: .5rem;
     &:first-of-type{
         padding-top: 0;
     }
 }
-@media (min-width:36rem){
+.articleParraf__p,.articleParraf__h3{
+    font-size: .8rem;    
+}
+@media #{$landscape-phones}{
     .containerParraf{
         align-items: space-between;
         flex-direction: row;
@@ -32,22 +39,21 @@ Contenedor de los (párrafos y los h3) del article correspondiente a los circulo
         width: 50%;   
     }
 }
-@media (min-width:48rem){
-   
+@media #{$tablets}{
 }
-@media (min-width:62rem){
+@media #{$desktops}{
     .containerParraf{
         width: 85%;
         margin-left: auto;
-        margin-right: auto;             
-    }   
+        margin-right: auto;               
+    } 
 }
-@media (min-width:75rem){
+@media #{$large-desktops}{
     .containerParraf{
         width: 80%;
-    }   
+    }
 }
-@media (min-width:100rem){
+@media #{$extra-large-desktops}{
     .containerParraf{
         width: 75%;
     }
@@ -56,4 +62,6 @@ Contenedor de los (párrafos y los h3) del article correspondiente a los circulo
         margin: 0;    
         align-self: flex-start;  
     }
+}
+@media #{$four-k}{
 }

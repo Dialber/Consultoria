@@ -1,67 +1,72 @@
 @import "../utilities/variables";
 @import "../utilities/mixins";
+
 .menu{
-    position: absolute;
-    width: 100%;
-    height: auto;
-    padding: 2rem;
-    background-color: $color-primary;
-    top: 0;
-    right:0;
-    z-index: 1000;
-    box-shadow:0 0 0 .8rem $color-primary inset,0 0 0 .9rem #fff inset;
-    transform: translateY(-200%);
-    transition: transform 0.8s ease;   
-    opacity: 0.98;
-}
-.menu__ul{
-   display: flex;
-   flex-direction: column;
-}
-.menu__element{
-    padding: .5rem 0;
+    background-color: transparent;
+    color: $color-white;
+    border: 0;
+    height: 100%;
+    font-size: $font-size-menu;
+    position: relative;   
     &:hover{
         cursor: pointer;
-        background-color: #fff;
-        color:$color-primary ;
     }
-    &:active{
-        transform: scale(0.9);
+}
+.menu__all{   
+    top: 0;
+    right: 0;
+    position: absolute;
+    background-color: $background-color-menu;
+    width: 100%;
+    z-index: 2000;
+    transform: translateX(120%);
+    transition: transform 2s ease;
+}
+.menu__ul{
+    margin-bottom: 5rem;
+}
+.menu__li{
+    width: 100%;
+    &:hover{
+        background-color: $color-white;
     }
-    &:first-of-type{
-        align-self: flex-end;
-        background-color:$color-primary ;
-        color: white;     
+}
+.menu__close{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: .5rem;
+    &:hover{
+        background-color: $color-black;
+    }
+}
+.menu__link{
+   
+}
+@media #{$landscape-phones}{   
+}
+@media #{$tablets}{   
+    .menu__all{
+        width: 50%;
+    }
+    .menu{
         &::after{
-            content: "\f410";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
+            content: "MENU";
+            margin: 0 1rem;
+            font-size: inherit;
+            font-family: "Roboto";
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
-.show{
-    transform: translateY(0);     
-}
-@media (min-width:36rem){
-    .menu__element{
-        padding: .6rem 0;
+@media #{$desktops}{
+    .menu__all{
+        width: 40%;
     }
 }
-@media (min-width:48rem){
-   .menu{
-       width: 50%;     
-   }
-   .menu__element{
-    padding: .7rem 0;
-}
-}
-@media (min-width:62rem){
-    .menu__element{
-        padding: .8rem 0;
-    }
-}
-@media (min-width:75rem){
-    .menu__element{
-        padding: 1rem 0;
+@media #{$large-desktops}{
+    .menu__all{
+        width: 33%;
     }
 }
