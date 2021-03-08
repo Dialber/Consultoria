@@ -6,7 +6,7 @@
   border-bottom: .1rem #ebebeb solid;
   padding-top: 1.5rem;
   padding-left: .5rem;
-  font-size: inherit;
+  font-size: 1.5rem;
   position: relative;
   font-weight: 400;
   :focus{
@@ -17,7 +17,7 @@
     width: auto;
     padding: .6rem 3rem;
     $isButtom:true;
-    @include conduct(#fff,$isButtom);
+    @include conduct($color-white,$isButtom);
     border:.15rem solid #878787;
 }
 .textarea{

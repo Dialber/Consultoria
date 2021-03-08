@@ -7,8 +7,8 @@
     background:url("../images/trianguleRed.svg") center -2rem / cover no-repeat, url("../images/logoGrey.svg") 0 0 / 4rem 3rem border-box,#ededed;    
     position: relative;  
     &::before{
-        content:"Logo";
-        background: url("../images/logo1.svg") center 20%  /50% no-repeat,#fff;
+        content:"";
+        background: url("../images/logo1.svg") center center  /50% no-repeat,$color-white;
         border: .15rem solid #fff;
         position: absolute;
         top:-8%;
@@ -42,15 +42,11 @@
 @media #{$tablets}{
 }
 @media #{$desktops}{
-    .article--nextStep{
-        &::before{
-            line-height: 3;
-        }
-    }    
+    
 }
 @media #{$large-desktops}{
     .article--nextStep{
-        background-position: center -6rem, 0 0 ;
+        background-position: bottom -6rem, 0 0 ;
     }   
 }
 @media #{$extra-large-desktops}{

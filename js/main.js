@@ -45,29 +45,50 @@ var menu=document.getElementById('id-menu');
 var bars=document.getElementById('id-nav');
 var hide=true;
 
+/*Adiciono la clase que muestra el menu cuando se cliclea el botón de amburgueza*/
 document.getElementById('id-nav').addEventListener('click',()=>{
     menu.classList.add('show');
     this.bars.setAttribute("aria-expanded","true");
     this.hide=false;
     ChanceFocus(hide);
 })
+
+/*Remuevo la clase que muestra el menu cuando se cliclea al botón cerrar*/
+function CloseMenu(){
+    var array = document.querySelectorAll('.menu__link, #id-close-menu');
+    for (let index = 0; index < array.length; index++) {
+        array[index].addEventListener('click',()=>{
+            menu.classList.remove('show');
+            this.hide=true;
+            ChanceFocus(hide);
+            this.bars.setAttribute("aria-expanded","false");
+        })
+        
+    }
+}
 document.getElementById('id-close-menu').addEventListener('click',()=>{
-    menu.classList.remove('show');
-    this.hide=true;
-    ChanceFocus(hide);
-    this.bars.setAttribute("aria-expanded","false");
+    
 })
 
 /*Metodo usado para remover el foco cuando traslade el menú fuera de la pantalla*/
 function ChanceFocus(hide) {   
     var elements=document.querySelectorAll('.menu__all a, .menu__all button');
     for (let index = 0; index < elements.length; index++) {
+        /*si está fuera de la pantalla el foco ya no puede pasar por ahí*/
         if(this.hide){        
             elements[index].setAttribute("tabindex","-1");        
         }
+        /*Dentro de la pantalla el foco ya puede pasar*/
         else{
-            elements[index].setAttribute("tabindex","0"); 
+            elements[index].setAttribute("tabindex","0");
         }
     }
 }
+/*Solo hago responsive las fuentes de los datos principales porque en pantallas demaciado grandes los textos se superponen*/
+function ResponsiveGraficFont(){
+    var array=document.querySelectorAll('.morris-hover.morris-default-style');    
+    array[0].style.fontSize=0.8+"rem";
+}
 window.addEventListener('load',ChanceFocus,false);
+window.addEventListener('load',CloseMenu,false);
+window.addEventListener('load',ResponsiveGraficFont,false);

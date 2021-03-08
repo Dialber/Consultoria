@@ -367,8 +367,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   position: relative;
 }
 .article--nextStep::before {
-  content: "Logo";
-  background: url("../images/logo1.svg") center 20%/50% no-repeat, #fff;
+  content: "";
+  background: url("../images/logo1.svg") center center/50% no-repeat, #ffffff;
   border: 0.15rem solid #fff;
   position: absolute;
   top: -8%;
@@ -406,14 +406,9 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     left: 45%;
   }
 }
-@media (min-width:62rem) {
-  .article--nextStep::before {
-    line-height: 3;
-  }
-}
 @media (min-width:75rem) {
   .article--nextStep {
-    background-position: center -6rem, 0 0;
+    background-position: bottom -6rem, 0 0;
   }
 }
 /*tamaños base*/
@@ -480,7 +475,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 }
 .pScroll::after {
   height: 0.4rem;
-  border-width: 0.02rem;
+  border-width: 0.05rem;
   top: -1.9rem;
   left: 47.97%;
 }
@@ -1126,9 +1121,9 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 
 @media (min-width:36rem) {
   .containerParraf {
-    -webkit-box-align: space-between;
-        -ms-flex-align: space-between;
-            align-items: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -1347,7 +1342,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   border-bottom: 0.1rem #ebebeb solid;
   padding-top: 1.5rem;
   padding-left: 0.5rem;
-  font-size: inherit;
+  font-size: 1.5rem;
   position: relative;
   font-weight: 400;
 }
