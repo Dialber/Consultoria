@@ -13,6 +13,7 @@ body{
     font-weight: 600;
     overflow-x: hidden;
 }
+
 input{
    font-weight: 400;
 }
@@ -29,6 +30,7 @@ h1,h2,h3{
     line-height:$line-height-h1;
     font-family: "Roboto";
     font-weight: 900;
+    text-align: center;
 }
 h1,h2{
     font-size: $font-size-h1;
@@ -40,6 +42,9 @@ h3{
 img,video{
     max-width: 100%;
     height: auto;
+}
+.controlsContainer:focus{
+    box-shadow: 0 0 0 .2rem $color-red;
 }
 p{
     font-weight: 100;

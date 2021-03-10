@@ -16,7 +16,10 @@
     padding-bottom: 0.5rem;
 }
 .graficData__containerVideo{
- @include c-flex(row);
+ @include c-flex(row); 
+}
+.chanceoutline{
+    --control-focus-outline: 2px solid $color-red;
 }
 .graficData__p2{
     width: 70%;
