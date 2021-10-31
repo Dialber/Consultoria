@@ -18,11 +18,6 @@
     &:focus{
         box-shadow: 0 0 0 .2rem $color-secundary inset;
     }
-    &::before{
-        width: 6rem;
-        font-size: 1.3rem;
-    }
-
 }
 @media #{$landscape-phones}{
     .link{

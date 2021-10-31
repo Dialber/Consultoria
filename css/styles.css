@@ -1537,11 +1537,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     width: 40%;
   }
 }
-@media (min-width:75rem) {
-  .menu__all {
-    width: 33%;
-  }
-}
 /*tamaños base*/
 .link {
   cursor: pointer;
@@ -1569,10 +1564,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .link:focus {
   -webkit-box-shadow: 0 0 0 0.2rem #ee322d inset;
           box-shadow: 0 0 0 0.2rem #ee322d inset;
-}
-.link::before {
-  width: 6rem;
-  font-size: 1.3rem;
 }
 
 @media (min-width:36rem) {
