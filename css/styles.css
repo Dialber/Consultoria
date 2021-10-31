@@ -40,7 +40,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -67,25 +67,21 @@ table {
   src: url("./font/Roboto/Roboto-light.ttf");
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto/Roboto-Bold.ttf");
   font-weight: 900;
 }
-
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto/Roboto-Regular.ttf");
   font-weight: 600;
 }
-
 @font-face {
   font-family: "Roboto";
   src: url("./font/Roboto/Roboto-Thin.ttf");
   font-weight: 100;
 }
-
 /*tamaños base*/
 body {
   width: 100%;
@@ -115,6 +111,15 @@ textarea {
   font-size: inherit;
   font-weight: 200;
   margin-left: 2rem;
+  font-size: 1.3rem;
+}
+
+::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: inherit;
+  font-weight: 200;
+  margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
 :-ms-input-placeholder {
@@ -122,6 +127,7 @@ textarea {
   font-size: inherit;
   font-weight: 200;
   margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
 ::-ms-input-placeholder {
@@ -129,6 +135,7 @@ textarea {
   font-size: inherit;
   font-weight: 200;
   margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
 ::placeholder {
@@ -136,6 +143,7 @@ textarea {
   font-size: inherit;
   font-weight: 200;
   margin-left: 2rem;
+  font-size: 1.3rem;
 }
 
 h1, h2, h3 {
@@ -189,45 +197,40 @@ html, body {
           box-shadow: 0 0 0 0.2rem #ee322d;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   html, body {
     font-size: 1rem;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   html, body {
     font-size: 1.2rem;
   }
+
   h1, h2 {
     font-size: 2.5rem;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   html, body {
     font-size: 1.3rem;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   html, body {
     font-size: 1.4rem;
   }
 }
-
-@media (min-width: 110rem) {
+@media (min-width:110rem) {
   html, body {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
 }
-
-@media (min-width: 160rem) {
+@media (min-width:160rem) {
   html, body {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -239,7 +242,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   width: 100%;
   height: 18rem;
   background: url("../images/background/small-background.jpg") 0 0/cover no-repeat;
-  padding: .5rem .5rem 1rem;
+  padding: 0.5rem 0.5rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -251,12 +254,10 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .l-header::before, .l-header::after {
   position: absolute;
   display: inline-block;
 }
-
 .l-header::before {
   content: "";
   top: 0;
@@ -264,34 +265,31 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   width: 100%;
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 0, 66, 0.6)), to(rgba(50, 0, 66, 0.6))), url("../images/trianguleCentral.svg") center center/40% no-repeat, url("../images/trianguleTop.svg") left top/20% no-repeat, url("../images/trianguleBotom.svg") right 120%/20% no-repeat;
+  background: -o-linear-gradient(rgba(50, 0, 66, 0.6), rgba(50, 0, 66, 0.6)), url("../images/trianguleCentral.svg") center center/40% no-repeat, url("../images/trianguleTop.svg") left top/20% no-repeat, url("../images/trianguleBotom.svg") right 120%/20% no-repeat;
   background: linear-gradient(rgba(50, 0, 66, 0.6), rgba(50, 0, 66, 0.6)), url("../images/trianguleCentral.svg") center center/40% no-repeat, url("../images/trianguleTop.svg") left top/20% no-repeat, url("../images/trianguleBotom.svg") right 120%/20% no-repeat;
   z-index: 20;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .l-header {
     background: url("../images/background/medium-background.jpg") 0 0/cover no-repeat;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .l-header {
     height: 32rem;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .l-header {
     background: url("../images/background/large-background.jpg") 0 0/cover no-repeat;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .l-header {
     background: url("../images/background/extra-background.jpg") 0 0/cover no-repeat;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -325,22 +323,22 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   margin-right: auto;
 }
 
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .l-grafic {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+
   .grafic {
     width: 50%;
   }
 }
-
 /*tamaños base*/
 .article--circles {
   color: #5d5d5d;
-  padding: .5rem;
+  padding: 0.5rem;
   height: auto;
 }
 
@@ -351,24 +349,21 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   background: url("../images/trianguleCentral.svg") center -2rem/20rem no-repeat, url("../images/background/services/small.jpg") 0 0/cover no-repeat;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .article--services {
     background: url("../images/trianguleCentral.svg") center -2rem/23rem auto no-repeat, url("../images/background/services/medium.jpg") 0 0/cover no-repeat;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .article--services {
     background: url("../images/trianguleCentral.svg") center -2rem/32rem auto no-repeat, url("../images/background/services/large.jpg") 0 0/cover no-repeat;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .article--services {
     background: url("../images/trianguleCentral.svg") center -2rem/35rem auto no-repeat, url("../images/background/services/extra.jpg") 0 0/cover no-repeat;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -382,11 +377,10 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   background: url("../images/trianguleRed.svg") center -2rem/cover no-repeat, url("../images/logoGrey.svg") 0 0/4rem 3rem border-box, #ededed;
   position: relative;
 }
-
 .article--nextStep::before {
   content: "";
   background: url("../images/logo1.svg") center center/50% no-repeat, #ffffff;
-  border: .15rem solid #fff;
+  border: 0.15rem solid #fff;
   position: absolute;
   top: -8%;
   left: 42.5%;
@@ -394,8 +388,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   height: 15vw;
   border-radius: 50%;
   z-index: 100;
-  -webkit-box-shadow: 0 0 0 .06rem #000, 0 0 0 .1rem #000 inset;
-          box-shadow: 0 0 0 .06rem #000, 0 0 0 .1rem #000 inset;
+  -webkit-box-shadow: 0 0 0 0.06rem #000, 0 0 0 0.1rem #000 inset;
+          box-shadow: 0 0 0 0.06rem #000, 0 0 0 0.1rem #000 inset;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,26 +405,23 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
           align-items: center;
   line-height: 2;
 }
-
 .article--nextStep > * {
   position: relative;
   z-index: 10;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .article--nextStep::before {
     width: 10vw;
     height: 10vw;
     left: 45%;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .article--nextStep {
     background-position: bottom -6rem, 0 0;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -460,8 +451,9 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 /*tamaños base*/
 .pScroll {
   -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,32 +464,28 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: .2rem;
+  margin-top: 0.2rem;
   position: relative;
   z-index: 30;
   top: 0;
 }
-
 .pScroll:hover {
   cursor: pointer;
 }
-
 .pScroll::before, .pScroll::after {
   content: "";
   display: inline-block;
   position: absolute;
-  border: .05rem solid #fff;
+  border: 0.05rem solid #fff;
 }
-
 .pScroll::before {
   width: 1rem;
   height: 1.8rem;
-  border-radius: .48rem;
+  border-radius: 0.48rem;
   top: -2.2rem;
 }
-
 .pScroll::after {
-  height: .4rem;
+  height: 0.4rem;
   border-width: 0.05rem;
   top: -1.9rem;
   left: 47.97%;
@@ -510,7 +498,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 
 .article__span {
   font-size: inherit;
-  margin: 0 .5rem;
+  margin: 0 0.5rem;
 }
 
 .article__span--services {
@@ -539,21 +527,20 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 }
 
 .article__p--nextStep {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .article__h2 {
   position: relative;
   color: #000;
 }
-
 .article__h2::after {
   content: "";
   position: absolute;
   display: inline-block;
   width: 10%;
   height: 0.15rem;
-  bottom: -.8rem;
+  bottom: -0.8rem;
   left: 45%;
   background-color: #5d5d5d;
 }
@@ -571,42 +558,43 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .article__h2--nextStep::after {
   background-color: #494949;
   left: 47.5%;
-  bottom: -.5rem;
+  bottom: -0.5rem;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .article > *:not(ul) {
     margin-bottom: 1rem;
   }
+
   .article__p {
     font-size: 1.2rem;
   }
+
   .article__p--services {
     margin-bottom: 1rem;
   }
+
   .article__p--nextStep {
     margin-bottom: 1.5rem;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .article__p--services {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2rem;
   }
+
   .article > *:not(ul) {
     margin-bottom: 1.5rem;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .article__p {
     width: 75%;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -643,9 +631,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
       -ms-flex-align: center;
           align-items: center;
 }
-
 .containerLogoMenu__ul > * {
-  padding: .1rem .5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 .containerLogoMenu__div {
@@ -657,7 +644,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .containerLogoMenu__img {
   width: 1.5rem;
   height: 1.5rem;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .containerLogoMenu__p, .containerLogoMenu__a {
@@ -676,68 +663,60 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   position: relative;
   line-height: 1;
 }
-
 .containerLogoMenu__a::after {
   content: "";
-  width: .2rem;
+  width: 0.2rem;
   height: 100%;
   background-color: #5e5e5e;
   position: absolute;
   bottom: 0;
-  right: -.8rem;
+  right: -0.8rem;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .containerLogoMenu__img {
     width: 1.8rem;
     height: 1.8rem;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .containerLogoMenu__img {
     width: 2rem;
     height: 2rem;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .containerLogoMenu__img {
     width: 2.5rem;
     height: 2.5rem;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .containerLogoMenu__img {
     width: 3rem;
     height: 3rem;
   }
 }
-
-@media (min-width: 110rem) {
+@media (min-width:110rem) {
   .containerLogoMenu__img {
     width: 4rem;
     height: 4rem;
   }
 }
-
-@media (min-width: 160rem) {
+@media (min-width:160rem) {
   .containerLogoMenu__img {
     width: 5rem;
     height: 5rem;
   }
 }
-
 /*tamaños base*/
 .centralContainer {
   position: relative;
   z-index: 30;
   margin-top: 1rem;
 }
-
 .centralContainer > * {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .centralContainer__h1 {
@@ -754,7 +733,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   margin-right: auto;
   opacity: 0.9;
   position: relative;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /*tamaños base*/
@@ -764,9 +743,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 */
 /*tamaños base*/
 .graficData {
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 .graficData > * {
   margin-bottom: 0.5rem;
 }
@@ -804,20 +782,19 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 
 .graficData__p2 {
   width: 70%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
 .graficData__video {
   width: 30%;
-  padding: .5rem;
+  padding: 0.5rem;
 }
 
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .graficData {
     width: 50%;
   }
 }
-
 /*tamaños base*/
 .grafic__element {
   width: 100%;
@@ -943,29 +920,32 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   z-index: 1;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .figureCircles {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin-bottom: 2rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
+
   .figureCircles__circle1 {
     background-color: rgba(241, 117, 123, 0.8);
     width: 6rem;
     height: 6rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle2 {
     top: 0;
-    left: -.5rem;
+    left: -0.5rem;
     background-color: rgba(119, 207, 199, 0.8);
     width: 9rem;
     height: 9rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle3 {
     top: 0;
     left: -1rem;
@@ -974,6 +954,7 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     height: 11rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle4 {
     top: 0;
     left: -1.5rem;
@@ -983,26 +964,28 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     border-radius: 100%;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .figureCircles__circle1 {
     background-color: rgba(241, 117, 123, 0.8);
     width: 7rem;
     height: 7rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle2 {
     background-color: rgba(119, 207, 199, 0.8);
     width: 9rem;
     height: 9rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle3 {
     background-color: rgba(109, 213, 237, 0.8);
     width: 11rem;
     height: 11rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle4 {
     background-color: #f6ce06;
     width: 7rem;
@@ -1010,29 +993,32 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     border-radius: 100%;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .figureCircles {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
+
   .figureCircles__circle1 {
     background-color: rgba(241, 117, 123, 0.8);
     width: 8rem;
     height: 8rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle2 {
     background-color: rgba(119, 207, 199, 0.8);
     width: 11rem;
     height: 11rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle3 {
     background-color: rgba(109, 213, 237, 0.8);
     width: 14rem;
     height: 14rem;
     border-radius: 100%;
   }
+
   .figureCircles__circle4 {
     background-color: #f6ce06;
     width: 8rem;
@@ -1040,64 +1026,38 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     border-radius: 100%;
   }
 }
-
-@media (min-width: 75rem) {
-  .figureCircles {
-    font-size: 1rem;
-  }
-  .figureCircles__circle1 {
-    background-color: rgba(241, 117, 123, 0.8);
-    width: 10rem;
-    height: 10rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle2 {
-    background-color: rgba(119, 207, 199, 0.8);
-    width: 17rem;
-    height: 17rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle3 {
-    background-color: rgba(109, 213, 237, 0.8);
-    width: 20rem;
-    height: 20rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle4 {
-    background-color: #f6ce06;
-    width: 10rem;
-    height: 10rem;
-    border-radius: 100%;
-  }
+/* 
+@media (min-width:75rem){
+    .figureCircles{
+        font-size: 1rem;        
+    }
+    .figureCircles__circle1{
+        @include circle($color-circle1,10rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,17rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,20rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,10rem);      
+    }
 }
-
-@media (min-width: 110rem) {
-  .figureCircles__circle1 {
-    background-color: rgba(241, 117, 123, 0.8);
-    width: 13rem;
-    height: 13rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle2 {
-    background-color: rgba(119, 207, 199, 0.8);
-    width: 22rem;
-    height: 22rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle3 {
-    background-color: rgba(109, 213, 237, 0.8);
-    width: 25rem;
-    height: 25rem;
-    border-radius: 100%;
-  }
-  .figureCircles__circle4 {
-    background-color: #f6ce06;
-    width: 13rem;
-    height: 13rem;
-    border-radius: 100%;
-  }
-}
-
+@media (min-width:110rem){
+    .figureCircles__circle1{
+        @include circle($color-circle1,13rem);       
+    }
+    .figureCircles__circle2{
+        @include circle($color-circle2,22rem);       
+    }
+    .figureCircles__circle3{
+        @include circle($color-circle3,25rem);       
+    }
+    .figureCircles__circle4{
+        @include circle($color-circle4,13rem);      
+    }
+} */
 /*
 Contenedor de los (párrafos y los h3) del article correspondiente a los circulos de colores
 */
@@ -1126,27 +1086,26 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 }
 
 .articleParraf {
-  padding: .5rem;
+  padding: 0.5rem;
   text-align: left;
   margin-bottom: 1rem;
 }
 
 .articleParraf__h3 {
   color: #000;
-  font-size: .7rem;
+  font-size: 0.7rem;
   text-transform: uppercase;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
-
 .articleParraf__h3:first-of-type {
   padding-top: 0;
 }
 
 .articleParraf__p, .articleParraf__h3 {
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .containerParraf {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1158,29 +1117,28 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+
   .articleParraf {
     width: 50%;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .containerParraf {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .containerParraf {
     width: 80%;
   }
 }
-
-@media (min-width: 110rem) {
+@media (min-width:110rem) {
   .containerParraf {
     width: 75%;
   }
+
   .articleParraf {
     width: 25%;
     margin: 0;
@@ -1188,7 +1146,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
         align-self: flex-start;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -1212,7 +1169,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .services__ul1 {
   background-color: #480048;
 }
-
 .services__ul1 li::before {
   background-color: #500c50;
 }
@@ -1220,7 +1176,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .services__ul2 {
   background-color: #300030;
 }
-
 .services__ul2 li::before {
   background-color: #3a0c3a;
 }
@@ -1230,9 +1185,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   display: -ms-flexbox;
   display: flex;
 }
-
 .services__li::before {
-  content: "\f061";
+  content: "";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   display: -webkit-box;
@@ -1255,33 +1209,32 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   -webkit-box-flex: 3;
       -ms-flex: 3;
           flex: 3;
-  padding: .7rem;
+  padding: 0.7rem;
 }
 
 .services__h3 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .services__ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+
   .services__li {
     width: 33.33%;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .services__container {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -1304,8 +1257,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
           align-items: center;
   width: 100%;
   padding: 5% 20%;
-  -webkit-box-shadow: 0 .06rem #dfdfdf;
-          box-shadow: 0 .06rem #dfdfdf;
+  -webkit-box-shadow: 0 0.06rem #dfdfdf;
+          box-shadow: 0 0.06rem #dfdfdf;
 }
 
 .article__containerForm {
@@ -1334,39 +1287,35 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   clip: rect(0 0 0 0);
 }
 
-@media (min-width: 36rem) {
+@media (min-width:36rem) {
   .formul {
     padding: 1rem 6rem;
   }
+
   .article__containerForm {
     width: 85%;
   }
 }
-
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .article__containerForm {
     width: 80%;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .article__containerForm {
     width: 70%;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .article__containerForm {
     width: 60%;
   }
 }
-
-@media (min-width: 110rem) {
+@media (min-width:110rem) {
   .article__containerForm {
     width: 50%;
   }
 }
-
 /*tamaños base*/
 /*
 mixin creado para el comportamiento de iconfonts y botones
@@ -1376,14 +1325,13 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .inputext {
   width: 100%;
   border: 0;
-  border-bottom: .1rem #ebebeb solid;
+  border-bottom: 0.1rem #ebebeb solid;
   padding-top: 1.5rem;
-  padding-left: .5rem;
-  font-size: 1.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.3rem;
   position: relative;
   font-weight: 400;
 }
-
 .inputext :focus {
   -webkit-box-shadow: 0 0 0 0.2rem #ee322d;
           box-shadow: 0 0 0 0.2rem #ee322d;
@@ -1391,22 +1339,8 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 
 .submit {
   width: auto;
-  padding: .6rem 3rem;
-  cursor: pointer;
-  border: .15rem solid #878787;
-}
-
-.submit:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.submit:hover {
-  background-color: #e6e6e6;
-}
-
-.submit:active {
-  background-color: #cccccc;
+  padding: 0.6rem 3rem;
+  border: 0.15rem solid #878787;
 }
 
 .textarea {
@@ -1415,28 +1349,29 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   max-width: 100%;
   width: 100%;
 }
-
 .textarea::-webkit-input-placeholder {
   font-family: "Roboto";
-  font-size: inherit;
+  font-size: 1.3rem;
   margin-left: 2rem;
 }
-
+.textarea::-moz-placeholder {
+  font-family: "Roboto";
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
 .textarea:-ms-input-placeholder {
   font-family: "Roboto";
-  font-size: inherit;
+  font-size: 1.3rem;
   margin-left: 2rem;
 }
-
 .textarea::-ms-input-placeholder {
   font-family: "Roboto";
-  font-size: inherit;
+  font-size: 1.3rem;
   margin-left: 2rem;
 }
-
 .textarea::placeholder {
   font-family: "Roboto";
-  font-size: inherit;
+  font-size: 1.3rem;
   margin-left: 2rem;
 }
 
@@ -1468,11 +1403,10 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   position: relative;
   margin-bottom: 3rem;
 }
-
 .socialMedia--header::before {
   content: "";
   position: absolute;
-  height: .15rem;
+  height: 0.15rem;
   width: 75%;
   left: 12.5%;
   top: -2rem;
@@ -1491,20 +1425,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
           align-items: center;
 }
 
-.socialMedia__a {
-  margin: 0 1rem;
-}
-
-.socialMedia__a:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #e3ecc2, 0 0 0 0.4rem #ee322d;
-          box-shadow: 0 0 0 0.2rem #e3ecc2, 0 0 0 0.4rem #ee322d;
-}
-
-.socialMedia__a--header:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem #000000, 0 0 0 0.4rem #ee322d;
-          box-shadow: 0 0 0 0.2rem #000000, 0 0 0 0.4rem #ee322d;
-}
-
 /*tamaños base*/
 /*tamaños base*/
 /*
@@ -1513,28 +1433,26 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 */
 .icon {
   font-size: 2rem;
-  cursor: pointer;
 }
-
-.icon:active {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.icon:hover {
-  color: #30003f;
-}
-
-.icon:active {
-  color: #2f003e;
-}
-
 .icon:link {
-  color: #320042;
+  color: #8A8A8A;
 }
-
 .icon:visited {
   color: #ee322d;
+}
+.icon:hover {
+  color: #ffffff;
+}
+
+.icon--menu {
+  margin: 0 1rem;
+}
+
+.icon--footer {
+  margin-left: 1.5rem;
+}
+.icon--footer:hover {
+  color: #000000;
 }
 
 /*tamaños base*/
@@ -1551,7 +1469,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   font-size: 1rem;
   position: relative;
 }
-
 .menu:hover {
   cursor: pointer;
 }
@@ -1564,11 +1481,14 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   width: 100%;
   z-index: 2000;
   -webkit-transform: translateX(120%);
+      -ms-transform: translateX(120%);
           transform: translateX(120%);
   -webkit-transition: -webkit-transform 2s ease;
   transition: -webkit-transform 2s ease;
+  -o-transition: transform 2s ease;
   transition: transform 2s ease;
   transition: transform 2s ease, -webkit-transform 2s ease;
+  display: none;
 }
 
 .menu__ul {
@@ -1578,7 +1498,6 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .menu__li {
   width: 100%;
 }
-
 .menu__li:hover {
   background-color: #ffffff;
 }
@@ -1593,17 +1512,17 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 .menu__close:hover {
   background-color: #000000;
 }
 
-@media (min-width: 48rem) {
+@media (min-width:48rem) {
   .menu__all {
     width: 50%;
   }
+
   .menu::after {
     content: "MENU";
     margin: 0 1rem;
@@ -1613,19 +1532,16 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
     font-weight: 600;
   }
 }
-
-@media (min-width: 62rem) {
+@media (min-width:62rem) {
   .menu__all {
     width: 40%;
   }
 }
-
-@media (min-width: 75rem) {
+@media (min-width:75rem) {
   .menu__all {
     width: 33%;
   }
 }
-
 /*tamaños base*/
 .link {
   cursor: pointer;
@@ -1639,57 +1555,55 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
-
 .link:link {
-  color: #ffffff;
+  color: #8A8A8A;
 }
-
-.link:hover {
-  color: #000000;
-}
-
-.link:active, .link:focus {
-  color: black;
-  -webkit-box-shadow: 0 0 0 0.2rem #ee322d inset;
-          box-shadow: 0 0 0 0.2rem #ee322d inset;
-}
-
 .link:visited {
   color: #ee322d;
 }
-
+.link:hover {
+  color: #000000;
+}
+.link:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #ee322d inset;
+          box-shadow: 0 0 0 0.2rem #ee322d inset;
+}
 .link::before {
-  margin-right: 4rem;
   width: 6rem;
   font-size: 1.3rem;
 }
 
+@media (min-width:36rem) {
+  .link {
+    padding: 0 3rem;
+  }
+}
+@media (min-width:48rem) {
+  .link {
+    padding: 0 2rem;
+  }
+}
 /*tamaños base*/
 .buttom {
   display: inline-block;
-  background-color: #000000;
+  background-color: #8A8A8A;
   font-size: 1.2rem;
-  padding: .3rem .7rem;
+  padding: 0.3rem 0.7rem;
   font-weight: 400;
   border: 0;
   cursor: pointer;
 }
-
+.buttom:hover {
+  background-color: #717171;
+}
 .buttom:active {
+  background-color: #575757;
   -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
           transform: scale(0.9);
 }
-
-.buttom:hover {
-  background-color: #0b000f;
-}
-
-.buttom:active {
-  background-color: black;
-}
-
 .buttom::before {
   color: #ffffff;
   font-size: 2.5rem;
@@ -1725,9 +1639,12 @@ si es un boton trabajo con el color de fondo si es una fuente trabajo con el col
 .show {
   -webkit-transition: -webkit-transform 2s ease;
   transition: -webkit-transform 2s ease;
+  -o-transition: transform 2s ease;
   transition: transform 2s ease;
   transition: transform 2s ease, -webkit-transform 2s ease;
   -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
           transform: translateX(0);
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */

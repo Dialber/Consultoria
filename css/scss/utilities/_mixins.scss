@@ -3,36 +3,7 @@
 mixin creado para el comportamiento de iconfonts y botones
 si es un boton trabajo con el color de fondo si es una fuente trabajo con el color del texto
 */
-@mixin conduct($color,$esButtom){
-    cursor: pointer;
-    &:active{
-        transform: scale(0.9);
-    }
-    @if($esButtom)
-    {
-        &:hover{
-            background-color: darken($color, 10%);           
-        }
-        &:active{
-            background-color: darken($color, 20%);                  
-        }     
-    }
-    /*Si es una fuente*/
-    @else{
-        &:hover{
-            color: darken($color, .5);           
-        }
-        &:active{
-            color: darken($color, .7);       
-        }
-        &:link{
-            color:$color;
-        }
-        &:visited{
-            color:$color-secundary;
-        }
-    }   
-}
+
 @mixin triangule($font-size,$width){
     content: "\25B3";
     color: purple;

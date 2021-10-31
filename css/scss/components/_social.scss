@@ -26,18 +26,6 @@
     justify-content: center;
     align-items: center;
 }
-
-.socialMedia__a{
-    margin:0 1rem;
-    &:focus{
-        box-shadow: 0 0 0 .2rem $background-color-body,0 0 0 .4rem $color-red;
-    } 
-}
-.socialMedia__a--header{
-    &:focus{
-        box-shadow: 0 0 0 .2rem $color-black,0 0 0 .4rem $color-red;
-    } 
-}
 @media #{$landscape-phones}{
    
 }

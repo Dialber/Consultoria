@@ -91,7 +91,7 @@
     .figureCircles__circle4{
         @include circle($color-circle4,8rem);      
     } 
-}
+}/* 
 @media #{$large-desktops}{
     .figureCircles{
         font-size: 1rem;        
@@ -122,4 +122,4 @@
     .figureCircles__circle4{
         @include circle($color-circle4,13rem);      
     }
-}
+} */

@@ -6,7 +6,7 @@
   border-bottom: .1rem #ebebeb solid;
   padding-top: 1.5rem;
   padding-left: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   position: relative;
   font-weight: 400;
   :focus{
@@ -16,8 +16,6 @@
 .submit{
     width: auto;
     padding: .6rem 3rem;
-    $isButtom:true;
-    @include conduct($color-white,$isButtom);
     border:.15rem solid #878787;
 }
 .textarea{
@@ -27,8 +25,7 @@
     width: 100%;
     &::placeholder{
       font-family: "Roboto";
-      font-size: inherit;
-      //font-weight: 400;
+      font-size: 1.3rem;
       margin-left: 2rem;
   }
 }

@@ -2,8 +2,25 @@
 @import "../utilities/mixins";
 .icon{    
     $esButton:false;
-    font-size: 2rem;    
-    @include conduct($color-primary,$esButton);
+    font-size: 2rem; 
+    &:link{
+        color:$color-link;
+    }    
+    &:visited{
+        color:$color-secundary;
+    }
+    &:hover{
+        color: $color-white;
+    }
+}
+.icon--menu{
+    margin:0 1rem;
+}
+.icon--footer{
+    margin-left: 1.5rem;
+    &:hover{
+        color:$color-black;
+    }
 }
 
 @media #{$landscape-phones}{

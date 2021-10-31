@@ -21,6 +21,7 @@
     z-index: 2000;
     transform: translateX(120%);
     transition: transform 2s ease;
+    display: none;
 }
 .menu__ul{
     margin-bottom: 5rem;
@@ -39,9 +40,6 @@
     &:hover{
         background-color: $color-black;
     }
-}
-.menu__link{
-   
 }
 @media #{$landscape-phones}{   
 }
