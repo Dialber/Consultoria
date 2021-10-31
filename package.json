@@ -1,0 +1,28 @@
+{
+  "name": "consultoria",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dialber/Consultoria.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dialber/Consultoria/issues"
+  },
+  "homepage": "https://github.com/Dialber/Consultoria#readme",
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "morris.js": "^0.5.0",
+    "raphael": "^2.3.0"
+  }
+}

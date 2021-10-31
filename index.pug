@@ -5,13 +5,13 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         link(rel="shortcut icon", href="images/logo1.svg", type="image/x-icon")
-        link(rel="stylesheet", href="css/fontawesome/css/all.min.css")
+        link(rel="stylesheet", href="./node_modules/font-awesome/css/font-awesome.min.css")
         link(rel="stylesheet", href="css/styles.css")
-        script(src="lib/jquery-3.3.1.min.js")
+        script(src="./node_modules/jquery/dist/jquery.min.js")
 
-        link(rel="stylesheet", href="lib/morris.css")
-        script(src="lib/raphael.js")
-        script(src="lib/morris.min.js")
+        link(rel="stylesheet", href="./node_modules/morris.js/morris.css")
+        script(src="./node_modules/raphael/raphael.js")
+        script(src="./node_modules/morris.js/morris.min.js")
 
         title Document
     body
@@ -22,19 +22,19 @@ html(lang="en")
                     p(class="containerLogoMenu__p") Anveshan           
                 nav(class="containerLogoMenu__ul container")
                     a(class="containerLogoMenu__a", href="#id-form") contact     
-                    button(class="menu fas fa-bars menu__bars",id="id-nav",tabindex="0",aria-label="principal menu",aria-expanded="false")                    
+                    button(class="menu fa fa-bars menu__bars",id="id-nav",tabindex="0",aria-label="principal menu",aria-expanded="false")                    
             div(class="menu__all",id="id-menu")
                 ul(class="menu__ul",id="id-menuNav")
-                    li(class="menu__li  menu__close"): button(class="fas fa-window-close buttom",id="id-close-menu",aria-label="cerrar")
-                    li(class="menu__li"): a(class="link menu__link fas fa-home", href="#id-header") Home
-                    li(class="menu__li"): a(class="link menu__link fas fa-laptop", href="#id-grafic") Quisque & Siter Amet
-                    li(class="menu__li"): a(class="link menu__link fas fa-puzzle-piece", href="#id-process") Our process
-                    li(class="menu__li"): a(class="link menu__link fas fa-project-diagram", href="#id-terms") Services & Terms                                           
-                    li(class="menu__li"): a(class="link menu__link fas fa-user", href="#id-form") Contact
+                    li(class="menu__li  menu__close"): button(class="fa fa-window-close buttom",id="id-close-menu",aria-label="cerrar")
+                    li(class="menu__li"): a(class="link menu__link fa fa-home", href="#id-header") Home
+                    li(class="menu__li"): a(class="link menu__link fa fa-laptop", href="#id-grafic") Quisque & Siter Amet
+                    li(class="menu__li"): a(class="link menu__link fa fa-puzzle-piece", href="#id-process") Our process
+                    li(class="menu__li"): a(class="link menu__link fa fa-language", href="#id-terms") Services & Terms                                           
+                    li(class="menu__li"): a(class="link menu__link fa fa-user", href="#id-form") Contact
                 ul(class="socialMedia socialMedia--header")
-                    li(class="socialMedia__li"): a(class="icon icon--menu fab fa-twitter-square",href="#",aria-label="twitter")
-                    li(class="socialMedia__li"): a(class="icon icon--menu fab fa-facebook-square",href="#",aria-label="facebook")
-                    li(class="socialMedia__li"): a(class="icon icon--menu fab fa-instagram",href="#",aria-label="instagram")   
+                    li(class="socialMedia__li"): a(class="icon icon--menu fa fa-twitter-square",href="#",aria-label="twitter")
+                    li(class="socialMedia__li"): a(class="icon icon--menu fa fa-facebook-square",href="#",aria-label="facebook")
+                    li(class="socialMedia__li"): a(class="icon icon--menu fa fa-instagram",href="#",aria-label="instagram")   
             article(class="centralContainer")
                 h1(class="centralContainer__h1 centralText") Research & Analisys
                 h2(class="centralContainer__h2 centralText") Driving Results 
@@ -141,9 +141,9 @@ html(lang="en")
                     input(class="inputext submit",type="submit", value="submit")
         footer(class="l-footer")
             ul(class="socialMedia")
-                li(class="socialMedia__li"): a(class="icon icon--footer fab fa-twitter-square",href="#",aria-label="twitter")
-                li(class="socialMedia__li"): a(class="icon icon--footer fab fa-facebook-square",href="#",aria-label="facebook")
-                li(class="socialMedia__li"): a(class="icon icon--footer fab fa-instagram",href="#",aria-label="instagram")
+                li(class="socialMedia__li"): a(class="icon icon--footer fa fa-twitter-square",href="#",aria-label="twitter")
+                li(class="socialMedia__li"): a(class="icon icon--footer fa fa-facebook-square",href="#",aria-label="facebook")
+                li(class="socialMedia__li"): a(class="icon icon--footer fa fa-instagram",href="#",aria-label="instagram")
             article(class="footer__derechosReservados")
                 small(class="footer__small"): a(href="www.MadanPatil.com",id="id-reserv", target="_blank") Designed by www.MadanPatil.com              
         script(src="js/main.js")
